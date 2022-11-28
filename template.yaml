@@ -31,8 +31,8 @@ Resources:
     Properties:
       Handler: src/handlers/get_all_items.getAllItemsHandler
       Runtime: python3.8
-      MemorySize: 128
-      Timeout: 100
+      MemorySize: 500
+      Timeout: 800
       Description: A simple example includes a HTTP get method to get all items from a DynamoDB table.
       Environment:
         Variables:
@@ -50,7 +50,7 @@ Resources:
     Properties:
       Handler: src/handlers/post_item.postItemHandler
       Runtime: python3.8
-      MemorySize: 128
+      MemorySize: 500
       Timeout: 800
       Description: A simple example includes a HTTP post method to add one item to a DynamoDB table.
       Environment:
