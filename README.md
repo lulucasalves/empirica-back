@@ -14,3 +14,13 @@ Logo após a instalação é necessário já ter uma conta na AWS e assim poder�
 
 Nesse caso ele irá fazer o deploy da aplicação dentro da sua conta AWS e assim poderá ver todo o processo funcionando observando as lambdas, dynamodb e o bucket s3.
 
+## Funções
+Para executar as funções presentes, copie o código de produção gerado após o deploy que é demonstrado no output e poderá executar as rotas ´GET´ baseado nessa mesma rota em '/' sem body.
+
+Para executar a função de POST é a mesma rota porém com o corpo em JSON na seguinte forma:
+```
+{
+ "bucket_name": "Nome do Bucket S3",
+ "object_key": "Chave do arquivo no bucket"
+}
+```
